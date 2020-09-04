@@ -1,0 +1,85 @@
+﻿@model HouseVin.ViewModels.HouseInfoModel
+@{
+    var obj = ViewData["HouseInfo"] as HouseVin.Data.t_houseInfo;
+}
+
+<div class="col-md-10 mx-auto py-4">
+    <div class="card">
+        <div class="card-header bg-primary text-uppercase text-white">
+            <h4>Add New </h4>
+        </div>
+        
+        <div class="card-body">
+            <form enctype="multipart/form-data" method="post" asp-action="Edit">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HouseName" class="control-label"></label>
+                            <input class="form-control" asp-for="HouseName" value="@obj.HouseName" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Direction" class="control-label"></label>
+                            <input asp-for="Direction" class="form-control" value="@obj.Direction" />
+                            <span asp-validation-for="Direction" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HouseAcreage" class="control-label"></label>
+                            <input class="form-control" asp-for="HouseAcreage" value="@obj.HouseAcreage" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HouseAreas" class="control-label"></label>
+                            <input asp-for="HouseAreas" class="form-control" value="@obj.HouseAreas" />
+                            <span asp-validation-for="Direction" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HousePrice" class="control-label"></label>
+                            <input class="form-control" asp-for="HousePrice" value="@obj.HousePrice.ToString("#,##0")" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label"></label>
+                            ​<textarea asp-for="Description" rows="7" cols="80">@obj.Description</textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-groupd">
+                            <input type="submit" value="submit" class="btn btn-sm btn-primary rounded-0 text-uppercase" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+

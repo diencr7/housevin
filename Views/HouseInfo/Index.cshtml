@@ -1,0 +1,66 @@
+﻿@model IEnumerable<HouseVin.Data.t_houseInfo>
+@{
+}
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <a class="btn btn-primary btn-block form-control-same-height rounded-0" asp-action="Create"> New</a>
+            </div>
+        </div>
+    </div>
+<div class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Areas
+                        </th>
+                        <th>
+                            Acreage
+                        </th>
+                        <th>
+                            Direction
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.HouseName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.HouseAreas)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.HouseAcreage)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Direction)
+                            </td>
+                            <td>
+                                @item.HousePrice.ToString("#,##0")
+                            </td>
+                            <td>
+                                <a asp-route-id="@item.Id" asp-action="Edit">Edit</a> | 
+                                <a asp-route-id="@item.Id" asp-action="Delete">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

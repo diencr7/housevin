@@ -1,0 +1,119 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model HouseVin.ViewModels.HouseInfoModel
+
+<div class="col-md-10 mx-auto py-4">
+    <div class="card">
+        <div class="card-header bg-primary text-uppercase text-white">
+            <h4>Add New </h4>
+        </div>
+        <div class="card-body">
+            <form enctype="multipart/form-data" asp-action="Create">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HouseName" class="control-label"></label>
+                            <input asp-for="HouseName" class="form-control" />
+                            <span asp-validation-for="HouseName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Direction" class="control-label"></label>
+                            <input asp-for="Direction" class="form-control" />
+                            <span asp-validation-for="Direction" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HouseAcreage" class="control-label"></label>
+                            <input asp-for="HouseAcreage" class="form-control" />
+                            <span asp-validation-for="HouseAcreage" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HouseAreas" class="control-label"></label>
+                            <input asp-for="HouseAreas" class="form-control" />
+                            <span asp-validation-for="HouseAreas" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HousePrice" class="control-label"></label>
+                            <input asp-for="HousePrice" class="form-control" />
+                            <span asp-validation-for="HousePrice" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Thumbnail" class="control-label"></label>
+                            <div class="custom-file">
+                                <input asp-for="Thumbnail" type="file" class="custom-file-input" id="Thumbnail" accept="image/*">
+                                <label class="custom-file-label" for="thumbnail">Choose file</label>
+                            </div>
+                            <span asp-validation-for="Thumbnail" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label"></label>
+                            ​<textarea asp-for="Description" rows="7" cols="80"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="ImageBackground" class="control-label"></label>
+                            <div class="custom-file">
+                                <input asp-for="ImageBackground" type="file" class="custom-file-input" id="imageBackground" accept="image/*">
+                                <label class="custom-file-label" for="thumbnail">Choose file</label>
+                            </div>
+                            <span asp-validation-for="ImageBackground" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Images" class="control-label"></label>
+                            <div class="custom-file">
+                                <input asp-for="Images" type="file" class="custom-file-input" id="images" accept="image/*" multiple>
+                                <label class="custom-file-label" for="Images">Choose file</label>
+                            </div>
+                            <span asp-validation-for="Images" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="submit" value="submit" class="btn btn-sm btn-primary rounded-0 text-uppercase" />  
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">// Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });</script>
+}  
