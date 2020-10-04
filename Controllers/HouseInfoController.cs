@@ -10,11 +10,13 @@ using HouseVin.ViewModels;
 using HouseVin.Utility;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace HouseVin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class HouseInfoController : Controller
     {
         private readonly ILogger<HouseInfoController> _logger;

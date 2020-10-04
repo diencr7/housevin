@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HouseVin.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -11,10 +11,12 @@ namespace HouseVin.Data
 
         public string HouseName { get; set; }
 
+        [Column(TypeName = "decimal(18,2)")]
         public decimal HousePrice { get; set; }
 
         public string HouseAreas { get; set; }
 
+        [Column(TypeName = "decimal(18,2)")]
         public decimal HouseAcreage { get; set; }
 
         public string Imgages { get; set; }

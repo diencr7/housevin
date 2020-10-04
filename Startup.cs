@@ -29,7 +29,7 @@ namespace HouseVin
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<HouseDbContext>(options =>
-                options.UseMySQL(Configuration.GetConnectionString("DevConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddRoles<IdentityRole>()

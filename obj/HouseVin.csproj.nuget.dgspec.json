@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/diendd/Projects/HouseVin/HouseVin.csproj": {}
+    "D:\\Project\\housevin\\HouseVin.csproj": {}
   },
   "projects": {
-    "/Users/diendd/Projects/HouseVin/HouseVin.csproj": {
+    "D:\\Project\\housevin\\HouseVin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/diendd/Projects/HouseVin/HouseVin.csproj",
+        "projectUniqueName": "D:\\Project\\housevin\\HouseVin.csproj",
         "projectName": "HouseVin",
-        "projectPath": "/Users/diendd/Projects/HouseVin/HouseVin.csproj",
-        "packagesPath": "/Users/diendd/.nuget/packages/",
-        "outputPath": "/Users/diendd/Projects/HouseVin/obj/",
+        "projectPath": "D:\\Project\\housevin\\HouseVin.csproj",
+        "packagesPath": "C:\\Users\\D-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\housevin\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/diendd/.config/NuGet/NuGet.Config"
+          "C:\\Users\\D-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,7 +55,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.6, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
@@ -91,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
