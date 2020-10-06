@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Search Page";
+}
+@model PaginatedList<HouseVin.Data.t_houseInfo>
+
+<div class="site-section site-section-sm bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a asp-route-id="@item.Id" asp-action="Detail" class="prop-entry d-block">
+                        <figure>
+                            <img src="~/images/@item.Thumbnail" alt="Image" class="img-fluid">
+                        </figure>
+                        <div class="prop-text">
+                            <div class="inner">
+                                <span class="price rounded">@Html.DisplayFor(modelItem => item.HousePrice)</span>
+                                <h3 class="title"> @Html.DisplayFor(modelItem => item.HouseName)</h3>
+                                <p class="location">@Html.DisplayFor(modelItem => item.HouseAreas)</p>
+                            </div>
+                            <div class="prop-more-info">
+                                <div class="inner d-flex">
+                                    <div class="col">
+                                        <span>Acreage:</span>
+                                        <strong>@Html.DisplayFor(modelItem => item.HouseAcreage)m<sup>2</sup></strong>
+                                    </div>
+                                    <div class="col">
+                                        <span>Areas:</span>
+                                        <strong>@Html.DisplayFor(modelItem => item.HouseAreas)</strong>
+                                    </div>
+                                    <div class="col">
+                                        <span>Baths:</span>
+                                        <strong>2</strong>
+                                    </div>
+                                    <div class="col">
+                                        <span>Garages:</span>
+                                        <strong>1</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+        @{
+            var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+            var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+        }
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="site-pagination">
+                    @{
+                        for (var i = 1; i <= Model.TotalPages; i++)
+                        {
+                            <a asp-action="Index" asp-route-pageNumber="@i" class=" @(i == Model.PageIndex ? "active" : "")">@i</a>
+                        }
+                    }
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

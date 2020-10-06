@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\housevin\\HouseVin.csproj": {}
+    "/Users/diendd/Desktop/HouseVin/HouseVin.csproj": {}
   },
   "projects": {
-    "D:\\Project\\housevin\\HouseVin.csproj": {
+    "/Users/diendd/Desktop/HouseVin/HouseVin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\housevin\\HouseVin.csproj",
+        "projectUniqueName": "/Users/diendd/Desktop/HouseVin/HouseVin.csproj",
         "projectName": "HouseVin",
-        "projectPath": "D:\\Project\\housevin\\HouseVin.csproj",
-        "packagesPath": "C:\\Users\\D-PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\housevin\\obj\\",
+        "projectPath": "/Users/diendd/Desktop/HouseVin/HouseVin.csproj",
+        "packagesPath": "/Users/diendd/.nuget/packages/",
+        "outputPath": "/Users/diendd/Desktop/HouseVin/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\D-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/diendd/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -96,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     }

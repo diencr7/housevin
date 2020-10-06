@@ -44,7 +44,7 @@
             <div class="container py-1">
                 <div class="row align-items-center">
                     <div class="col-8 col-md-8 col-lg-4">
-                        <h1 class=""><a href="index.html" class="h5 text-uppercase text-black"><strong>Vin Home<span class="text-danger">.</span></strong></a></h1>
+                        <h1 class=""><a asp-controller="Home" asp-action="Index" class="h5 text-uppercase text-black"><strong>Vin Home<span class="text-danger">.</span></strong></a></h1>
                     </div>
                     <div class="col-4 col-md-4 col-lg-8">
                         <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -53,7 +53,7 @@
 
                             <ul class="site-menu js-clone-nav d-none d-lg-block">
                                 <li class="active">
-                                    <a href="index.html">Trang chủ</a>
+                                    <a asp-controller="Home" asp-action="Index">Trang chủ</a>
                                 </li>
                                 <li class="">
                                     <a asp-controller="HouseInfo">Quản lý nhà</a>

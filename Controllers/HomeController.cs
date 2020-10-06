@@ -47,7 +47,15 @@ namespace HouseVin.Controllers
             return View(await PaginatedList<t_houseInfo>.CreateAsync(house.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
-       
+        public async Task<IActionResult> Search(string searchMaNha, int? pageNumber)
+        {
+            var house = from h in _context.t_HouseInfo
+                        where h.HouseName.Contains(searchMaNha)
+                        select h;
+            int pageSize = 9;
+            return View(await PaginatedList<t_houseInfo>.CreateAsync(house.AsNoTracking(), pageNumber ?? 1, pageSize));
+        }
+
         public async Task<IActionResult> Detail(int id)
         {
             t_houseInfo obj = await _context.t_HouseInfo.Where(s => s.Id == id).FirstOrDefaultAsync();
