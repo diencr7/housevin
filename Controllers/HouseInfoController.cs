@@ -107,7 +107,7 @@ namespace HouseVin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(HouseInfoModel model)
         {
-
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
     }

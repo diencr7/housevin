@@ -415,10 +415,10 @@ D:/Project/housevin/obj/Debug/netcoreapp3.1/HouseVin.MvcApplicationPartsAssembly
 D:/Project/housevin/obj/Debug/netcoreapp3.1/HouseVin.MvcApplicationPartsAssemblyInfo.cache
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/appsettings.json
-/Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
-/Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/app.db
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/mono_crash.d47a873ed.0.json
+/Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/HouseVin.StaticWebAssets.xml
+/Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/app.db
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/HouseVin.deps.json
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/HouseVin.runtimeconfig.json
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/HouseVin.runtimeconfig.dev.json
@@ -577,7 +577,6 @@ D:/Project/housevin/obj/Debug/netcoreapp3.1/HouseVin.MvcApplicationPartsAssembly
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/diendd/Desktop/HouseVin/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-/Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/HouseVin.csprojAssemblyReference.cache
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/HouseVin.AssemblyInfoInputs.cache
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/HouseVin.AssemblyInfo.cs
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/HouseVin.csproj.CoreCompileInputs.cache
@@ -599,6 +598,7 @@ D:/Project/housevin/obj/Debug/netcoreapp3.1/HouseVin.MvcApplicationPartsAssembly
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/Razor/Views/Home/Detail.cshtml.g.cs
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+/Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/Razor/Views/Home/Search.cshtml.g.cs
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/Razor/Views/HouseInfo/Create.cshtml.g.cs
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/Razor/Views/HouseInfo/Edit.cshtml.g.cs
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/Razor/Views/HouseInfo/Index.cshtml.g.cs
@@ -620,4 +620,3 @@ D:/Project/housevin/obj/Debug/netcoreapp3.1/HouseVin.MvcApplicationPartsAssembly
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/HouseVin.dll
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/HouseVin.pdb
 /Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/HouseVin.genruntimeconfig.cache
-/Users/diendd/Desktop/HouseVin/obj/Debug/netcoreapp3.1/Razor/Views/Home/Search.cshtml.g.cs
