@@ -54,18 +54,6 @@
             </form>
         </div>
 
-        <div class="col-md-6 col-lg-4 mb-4">
-            <h3>Loc gia cao thap</h3>
-            <form asp-action="Search">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                        <input class="form-control" name="searchMaNha" placeholder="Nhập tên nhà để tìm " />
-                    </div>
-
-                </div>
-            </form>
-        </div>
-
     </div>
 </div>
 
@@ -91,11 +79,11 @@
                             <div class="prop-more-info">
                                 <div class="inner d-flex">
                                     <div class="col">
-                                        <span>Acreage:</span>
+                                        <span>Diện tích:</span>
                                         <strong>@Html.DisplayFor(modelItem => item.HouseAcreage)m<sup>2</sup></strong>
                                     </div>
                                     <div class="col">
-                                        <span>Areas:</span>
+                                        <span>Khu vực:</span>
                                         <strong>@Html.DisplayFor(modelItem => item.HouseAreas)</strong>
                                     </div>
                                     <div class="col">

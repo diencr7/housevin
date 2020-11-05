@@ -60,26 +60,26 @@
                     </div>
                     <div class="row mb-5">
                         <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
-                            <span class="d-inline-block text-black mb-0 caption-text">Direction</span>
+                            <span class="d-inline-block text-black mb-0 caption-text">Hướng căn hộ</span>
                             <strong class="d-block">@Model.Direction</strong>
                         </div>
                         <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
-                            <span class="d-inline-block text-black mb-0 caption-text">Acreage</span>
+                            <span class="d-inline-block text-black mb-0 caption-text">Diện tích</span>
                             <strong class="d-block">@Model.HouseAcreage</strong>
                         </div>
                         <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
-                            <span class="d-inline-block text-black mb-0 caption-text">Price/Sqft</span>
+                            <span class="d-inline-block text-black mb-0 caption-text">Giá</span>
                             <strong class="d-block">@Model.HousePrice.ToString("#,##0")</strong>
                         </div>
                     </div>
-                    <h2 class="h4 text-black">More Info</h2>
+                    <h2 class="h4 text-black">Thông tin căn hộ</h2>
                     <p>
                         @Model.Description
                     </p>
 
                     <div class="row mt-5">
                         <div class="col-12">
-                            <h2 class="h4 text-black mb-3">Property Gallery</h2>
+                            <h2 class="h4 text-black mb-3">Hình ảnh căn hộ</h2>
                         </div>
                         @for (var i = 0; i < images.Count(); i++)
                         {

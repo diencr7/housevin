@@ -8,27 +8,28 @@ namespace HouseVin.ViewModels
         [Required]
         [DataType(DataType.Text)]
         [RegularExpression(@"^[a-zA-Z''-'\S]{1,40}$",
-         ErrorMessage = "Characters are not allowed.")]
+         ErrorMessage = "Có các ký tự không được phép.")]
+        [Display(Name = "Tài khoản")]
         public string Name { get; set; }
 
         [Required]
-        [EmailAddress(ErrorMessage = "Invalid Email Address")]
+        [EmailAddress(ErrorMessage = "Địa chỉ email không hợp lệ")]
         public string Email { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Mật khẩu")]
         [RegularExpression(@"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$",
-            ErrorMessage = "Password required minimum eight characters, at least one uppercase letter, one lowercase letter and one number")]
+            ErrorMessage = "Mật khẩu yêu cầu 8 ký tự trở lên, cần có cả chữ viết hoa, viết thường và số")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "Xác nhận mật khẩu")]
+        [Compare("Password", ErrorMessage = "Mật khẩu và mật khẩu xác nhận không khớp với nhau")]
         public string ConfirmPassword { get; set; }
 
-        [Display(Name = "Is Admin?")]
+        [Display(Name = "Tài khoản Admin?")]
         public bool Role { get; set; }
     }
 
